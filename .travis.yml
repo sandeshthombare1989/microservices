@@ -2,7 +2,7 @@ language: bash
 sudo: required
 branches:
   only:
-  - main
+  - dev2
 services:
 - docker
 before_install:
@@ -17,4 +17,4 @@ deploy:
   provider: script
   script: bash scripts/deploy.sh
   on:
-    branch: main
+    branch: dev2
