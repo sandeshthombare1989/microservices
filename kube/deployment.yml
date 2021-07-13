@@ -21,3 +21,7 @@ spec:
           ports:
             - containerPort: 80
               name: http
+      tolerations:
+      - key: "node.kubernetes.io/not-ready"
+        operator: "Equal"
+        effect: "NoSchedule"
