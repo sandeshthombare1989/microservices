@@ -2,11 +2,11 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: cicd
-  namespace: default
+  namespace: ns2
 subjects:
   - kind: ServiceAccount
     name: cicd
-    namespace: default
+    namespace: ns2
 roleRef:
   kind: Role
   name: cicd
